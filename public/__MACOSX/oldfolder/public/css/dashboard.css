@@ -1,0 +1,470 @@
+body{
+    font-family:'Inter',sans-serif;
+    background:#f6f8fc;
+    color:#1f2937;
+}
+
+
+/* Page */
+.dashboard-page{
+    padding:8px 0 0;
+}
+
+/* ================= Top Section ================= */
+.dashboard-top{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:8px;
+    padding:20px 24px;
+    box-shadow:0 8px 18px rgba(0,0,0,.04);
+    margin-bottom:24px;
+    margin-top:20px;
+}
+
+.dashboard-top-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* Greeting */
+.greeting-box h6{
+    margin:0 0 4px;
+    font-size:13px;
+    font-weight:500;
+    color:#6b7280;
+}
+
+.greeting-box h4{
+    margin:0;
+    font-size:22px;
+    font-weight:600;
+    color:#111827;
+}
+
+/* Dropdown */
+.filter-select{
+    width:170px;
+    height:42px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    padding:0 38px 0 14px;
+    background:#fff;
+    color:#111827;
+    font-size:14px;
+    font-weight:500;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%236b7280' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right 12px center;
+    background-size:14px;
+}
+
+.filter-select:focus{
+    border-color:#c7d2fe;
+    box-shadow:0 0 0 3px rgba(99,102,241,.10);
+}
+
+/* ================= Cards ================= */
+.card-link{
+    text-decoration:none !important;
+    color:inherit;
+}
+
+.dashboard-card{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:8px;
+    padding:22px;
+    box-shadow:0 8px 18px rgba(0,0,0,.04);
+    transition:.25s ease;
+    margin-bottom:24px;
+    min-height:155px;
+    cursor:pointer;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 28px rgba(0,0,0,.07);
+}
+
+.card-icon{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    margin-bottom:16px;
+    margin-top: 31px;
+}
+
+.card-content .total{
+    margin:0;
+    font-size:28px;
+    font-weight:600;
+    color:#111827;
+    line-height:1.2;
+}
+
+.card-content .label{
+    margin:6px 0 0;
+    font-size:14px;
+    font-weight:500;
+    color:#6b7280;
+}
+
+/* Colors */
+.yellow{background:#fef3c7;color:#d97706;}
+.blue{background:#dbeafe;color:#2563eb;}
+.green{background:#dcfce7;color:#16a34a;}
+.red{background:#fee2e2;color:#dc2626;}
+.purple{background:#ede9fe;color:#7c3aed;}
+.orange{background:#ffedd5;color:#ea580c;}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .dashboard-top-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .filter-select{
+        width:100%;
+    }
+
+}
+
+/* ================= Graph Cards ================= */
+/* ================= CLICKABLE CARDS ================= */
+.dashboard-card{
+    cursor:pointer;
+}
+
+.card-link{
+    display:block;
+    text-decoration:none !important;
+    color:inherit;
+}
+
+/* ================= PERFECT GRAPH UI ================= */
+
+.graph-card{
+    min-height:430px;
+    padding:22px;
+}
+
+.graph-head-line{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+}
+
+.graph-title{
+    font-size:17px;
+    font-weight:700;
+    color:#111827;
+    display:flex;
+    align-items:center;
+}
+
+.graph-right-filter{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.graph-select{
+    height:42px;
+    min-width:145px;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:0 14px;
+    background:#fff;
+    font-size:14px;
+    font-weight:500;
+    color:#111827;
+    outline:none;
+}
+
+.graph-select:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 0 3px rgba(99,102,241,.08);
+}
+
+.chart-box{
+    height:310px;
+    border:1px solid #eef1f7;
+    border-radius:16px;
+    padding:14px;
+    background:linear-gradient(180deg,#ffffff,#f8faff);
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .graph-head-line{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .graph-right-filter{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .graph-select{
+        width:100%;
+    }
+}
+
+.small-card{
+    padding:16px;
+    min-height:100px;
+    border-radius:8px;
+    position:relative;
+}
+
+.card-body-flex{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* badges */
+.card-badge{
+    position:absolute;
+    top:8px;
+    left:10px;
+    font-size:10px;
+    padding:3px 7px;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.yellow-badge{background:#fef3c7;color:#92400e;}
+.purple-badge{background:#ede9fe;color:#6b21a8;}
+.orange-badge{background:#ffedd5;color:#9a3412;}
+.blue-badge{background:#dbeafe;color:#1d4ed8;}
+.red-badge{background:#fee2e2;color:#b91c1c;}
+.green-badge{background:#dcfce7;color:#166534;}
+
+/* smaller text */
+.total{
+    font-size:22px !important;
+    margin:0;
+}
+
+.label{
+    font-size:12px;
+    margin:2px 0 0;
+}
+
+.dashboard-table thead th{
+    background:#f1f5f9;
+    border:none;
+    font-size:13px;
+    font-weight:600;
+    color:#475569;
+}
+
+.dashboard-table tbody tr{
+    transition:.2s;
+}
+
+.table thead th{
+    background:#fff;
+    color:#000;
+    font-size:13px;
+}
+
+.table tbody td{
+    font-size:13px;
+    vertical-align:middle;
+}
+
+.dashboard-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.table-label{
+    font-size:13px;
+    font-weight:500;
+    color:#1e293b;
+}
+
+.count-badge{
+    display:inline-block;
+    min-width:45px;
+    padding:5px 10px;
+    font-size:12px;
+    font-weight:600;
+    border-radius:20px;
+    background:#e0f2fe;
+    color:#0284c7;
+}
+
+.table th, .table td {
+    white-space: nowrap;   
+}
+
+.table {
+    min-width: 1800px; 
+}
+.small-card{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    border-radius:10px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    transition:0.2s;
+}
+
+.small-card:hover{
+    transform:translateY(-3px);
+}
+
+.small-card .icon{
+    font-size:18px;
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+.small-card .text{
+    display:flex;
+    flex-direction:column;
+}
+
+.small-card .count{
+    font-size:16px;
+    font-weight:700;
+    color:#111;
+    line-height:1;
+}
+
+.small-card .label{
+    font-size:11px;
+    color:#666;
+}
+.dashboard-card{
+    background:#fff;
+    border-radius:10px;
+    padding:12px 14px;   
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:0.2s;
+    min-height:70px; 
+}
+
+.dashboard-card:hover{
+    transform:translateY(-2px);
+}
+
+.dashboard-card .icon{
+    font-size:20px; 
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+.dashboard-card .text .count{
+    font-size:16px;
+    font-weight:600;
+    display:block;
+    line-height:1;
+}
+
+.dashboard-card .text .label{
+    font-size:12px;
+    color:#777;
+}
+
+.no-chart-data{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:16px;
+    font-weight:600;
+    color:#94a3b8;
+    text-align:center;
+}
+
+.d-none{
+    display:none;
+}
+
+.dashboard-top-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT */
+.left-side{
+    display: flex;
+    align-items: center;
+}
+
+/* RIGHT ROW */
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Pending Button */
+.pending-btn{
+    position: relative;
+    padding: 6px 10px;
+    background: #f1f1f1;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Badge */
+.task-badge{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: red;
+    color: #fff;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Label */
+.filter-label{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+

@@ -1,0 +1,159 @@
+/* ===== GLOBAL ===== */
+body{
+    background:#f4f7fb;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===== HEADER ===== */
+.page_title{
+    margin-bottom:20px;
+}
+
+.page_title h2{
+    font-size:22px;
+    font-weight:600;
+    color:#1e293b;
+}
+
+/* ===== CARD ===== */
+.pro-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:18px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    border:1px solid #eef2f7;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title{
+    font-size:16px;
+    font-weight:600;
+    color:#334155;
+    margin-bottom:15px;
+}
+
+/* ===== TABLE ===== */
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#f1f5f9;
+    color:#475569;
+    font-size:13px;
+}
+
+.table th{
+    font-weight:600;
+    padding:12px;
+}
+
+.table td{
+    padding:12px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    border-bottom:1px solid #f1f5f9;
+    transition:0.2s;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* ===== BADGE ===== */
+.pro-badge{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-group{
+    display:flex;
+    gap:6px;
+}
+
+.icon-btn{
+    width:32px;
+    height:32px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    transition:0.2s;
+    text-decoration:none;
+}
+
+/* EDIT */
+.edit-btn{
+    background:#fef3c7;
+    color:#d97706;
+}
+.edit-btn:hover{
+    background:#fde68a;
+}
+
+/* DELETE */
+.delete-btn{
+    background:#fee2e2;
+    color:#dc2626;
+}
+.delete-btn:hover{
+    background:#fecaca;
+}
+
+/* ===== FORM ===== */
+.form-label{
+    font-size:13px;
+    color:#475569;
+    margin-bottom:6px;
+}
+
+.form-control{
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    padding:10px;
+    font-size:14px;
+}
+
+.form-control:focus{
+    border-color:#3b82f6;
+    box-shadow:0 0 0 2px rgba(59,130,246,0.15);
+}
+
+/* ===== SAVE BUTTON ===== */
+.primary-btn{
+    background:#16a34a;
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    font-weight:500;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    background:#15803d;
+}
+
+/* ===== GRID ===== */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.col-md-7{flex:0 0 58%;}
+.col-md-5{flex:0 0 40%;}
+
+@media(max-width:768px){
+    .col-md-7,
+    .col-md-5{
+        flex:0 0 100%;
+    }
+}

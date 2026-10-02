@@ -1,0 +1,180 @@
+/* ===== BACKGROUND ===== */
+body{
+    background:#f4f7fb;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===== MAIN CARD ===== */
+.main-card{
+    background:#fff;
+    border-radius:16px;
+    padding:28px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.05);
+    border:1px solid #e5eaf1;
+}
+
+/* ===== HEADER ===== */
+.form-header h4{
+    font-size:20px;
+    font-weight:600;
+    color:#1e293b;
+}
+
+.form-header small{
+    color:#64748b;
+}
+
+/* ===== LINE ===== */
+.section-line{
+    height:1px;
+    background:#e2e8f0;
+    margin:20px 0;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group{
+    margin-bottom:18px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ===== LABEL ===== */
+.form-label{
+    font-size:13px;
+    font-weight:500;
+    color:#475569;
+    margin-bottom:6px;
+}
+
+/* ===== INPUT SAME SIZE FIX ===== */
+.form-control,
+select.form-control{
+    height:44px;
+    padding:10px 12px;
+    font-size:14px;
+    background:#f9fbff;
+    transition:0.2s;
+    width: 361px !important;
+}
+
+.form-control:focus{
+    background:#fff;
+    border-color:#3b82f6;
+    box-shadow:0 0 0 2px rgba(59,130,246,0.12);
+}
+
+/* TEXTAREA */
+textarea.form-control{
+    height:auto;
+    min-height:44px;
+}
+
+/* SELECT FIX */
+select.form-control:not([size]):not([multiple]) {
+    height: 44px !important;
+}
+
+/* PASSWORD ICON */
+.eye-icon{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#64748b;
+}
+
+/* IMAGE */
+.preview-img{
+    width: 101px;
+    margin-top:8px;
+    border-radius:6px;
+    display:none;
+}
+
+/* BUTTON GROUP */
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-top:20px;
+}
+
+/* SAVE BUTTON */
+.btn-save{
+    background:#16a34a;
+    border:none;
+    border-radius:8px;
+    padding:8px 18px;
+    color:#fff;
+    font-weight:500;
+}
+
+.btn-save:hover{
+    background:#15803d;
+}
+
+/* CANCEL */
+.btn-cancel{
+    border-radius:8px;
+    padding:8px 16px;
+}
+
+@media(max-width:768px){
+    .button-group{
+        flex-direction:column;
+    }
+}
+
+.select2-container--default .select2-selection__choice{
+    background:#16a34a !important;
+    color:#fff !important;
+    border:none !important;
+    border-radius:6px !important;
+    padding:3px 8px !important;
+    font-size:12px !important;
+    margin-top:0 !important;
+}
+
+.select2-container--default 
+.select2-selection--multiple 
+.select2-selection__choice__remove{
+    border:none !important;
+    color:#fff;
+}
+
+.select2-container--default 
+.select2-selection--multiple 
+.select2-selection__choice__remove:hover{
+    background:transparent;
+    color:#000 !important;
+}
+
+/* dropdown */
+.select2-dropdown{
+    border:1px solid #cbd5e1 !important;
+    border-radius:10px !important;
+}
+
+/* ===== FIX SELECT HEIGHT ===== */
+select.form-control:not([size]):not([multiple]){
+    height:44px !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:991px){
+    .dynamic-grid .field-box{
+        width:50%;
+    }
+}
+
+@media(max-width:767px){
+    .dynamic-grid .field-box{
+        width:100%;
+    }
+
+    .select2-container{
+        width:100% !important; /* mobile fix */
+    }
+}
+

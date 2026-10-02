@@ -1,0 +1,342 @@
+/* /////////////create page css /////////////////////*/
+.main-card{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    border:1px solid #e5eaf1;
+}
+
+.form-label{
+    font-size:13px;
+    font-weight:600;
+    color:#334155;
+    margin-bottom:7px;
+}
+
+.form-control{
+    height:44px;
+    border-radius:10px;
+    font-size:14px;
+}
+
+textarea.form-control{
+    min-height:120px;
+}
+
+.btn-save{
+    background:#16a34a;
+    border:none;
+    color:#fff;
+    border-radius:10px;
+    padding:10px 24px;
+    font-weight:600;
+}
+
+.d-none{
+    display:none !important;
+}
+
+/* dynamic grid */
+.dynamic-grid{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-10px;
+    margin-right:-10px;
+}
+
+.dynamic-grid .field-box{
+    width:33.33%;
+    padding:0 10px;
+    margin-bottom:18px;
+}
+
+/* select2 */
+.select2-container{
+    width:100% !important;
+}
+
+.select2-container--default .select2-selection--single{
+    height:44px !important;
+    border:1px solid #cbd5e1 !important;
+    border-radius:10px !important;
+    display:flex !important;
+    align-items:center !important;
+    padding:0 12px !important;
+    width: 412px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height:42px !important;
+    padding-right:25px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height:42px !important;
+    right:8px !important;
+}
+
+
+select.form-control:not([size]):not([multiple]){
+    height: 44px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    min-height: 34px !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 10px !important;
+    padding: 9px 8px !important;
+    width: 572px !important;
+}
+
+.select2-container--default .select2-selection__choice{
+    background:#16a34a !important;
+    color:#fff !important;
+    border:none !important;
+    border-radius:6px !important;
+    padding:3px 8px !important;
+    font-size:12px !important;
+}
+
+.select2-dropdown{
+    border:1px solid #cbd5e1 !important;
+    border-radius:10px !important;
+}
+
+
+@media(max-width:991px){
+    .dynamic-grid .field-box{
+        width:50%;
+    }
+}
+
+@media(max-width:767px){
+    .dynamic-grid .field-box{
+        width:100%;
+    }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 0px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    border: none !important;
+    color: white;
+    position: static;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+    background-color: transparent;
+    color: black !important;
+    outline: none;
+}
+.field-box{
+    margin-bottom:15px;
+}
+
+.form-label{
+    font-weight:600;
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.error-text{
+    color:red;
+    font-size:12px;
+    margin-top: 2px;
+}
+
+.assignBtn:hover{
+    background:#eef2ff !important;
+    border-color:#c7d2fe !important;
+    color:#1d4ed8 !important;
+}
+#assignModal .close{
+    font-size: 28px;
+    color: #000;
+    opacity: 1;
+    outline: none;
+}
+
+/* Modal ke andar dropdown cut na ho */
+#assignModal{
+    overflow: visible !important;
+}
+
+#assignModal .modal-dialog{
+    max-width:600px;
+}
+
+
+#assignModal .modal-body{
+    max-height:70vh;
+    overflow-y:auto;
+}
+
+#assignModal .select2-container{
+    width:100% !important;
+}
+
+#assignModal .modal-dialog,
+#assignModal .modal-body{
+    overflow: visible !important;
+}
+
+/* Select2 dropdown above modal */
+.select2-container--open{
+    z-index: 999999 !important;
+}
+
+/*///////////////////////////////// Model /////////////////////////////////////////*/
+/* Assign Modal dynamic height fix */
+#assignModal .modal-dialog{
+    max-width: 600px; /* optional */
+}
+
+#assignModal .modal-content{
+    border-radius: 8px;
+}
+
+#assignModal .modal-body{
+    max-height: 75vh;
+    overflow-y: auto;
+    transition: all .3s ease;
+}
+
+/* Select2 dropdown inside modal */
+#assignModal .select2-container{
+    width: 100% !important;
+}
+
+#assignModal .select2-dropdown{
+    z-index: 9999;
+}
+
+.assign-btn{
+    background: #fff1f2;          
+    color: #b91c1c;              
+    border: 1px solid #e5e7eb;   
+    border-radius: 8px;          
+    font-size: 13px;
+    padding: 4px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.assign-btn:hover{
+    background: #fee2e2;         
+    color: #991b1b;
+    border-color: #d1d5db;
+    box-shadow: 0 2px 8px rgba(185,28,28,0.15);
+}
+
+.assign-btn i{
+    font-size: 12px;
+}
+
+
+select.form-control:not([size]):not([multiple]){
+    height: 42px !important;
+}
+
+/* =========================
+   PAGE BACKGROUND
+========================= */
+body{
+    background:#f4f6fb;
+}
+
+/* =========================
+   MAIN CARD IMPROVEMENT
+========================= */
+.main-card{
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #e8edf3;
+    transition: all 0.3s ease;
+}
+
+.main-card:hover{
+    box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   INPUT FOCUS STYLE
+========================= */
+.form-control{
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    background:#fff;
+}
+
+.form-control:focus{
+    border-color:#6366f1;
+    box-shadow: 0 0 0 4px rgba(99,102,241,0.10);
+}
+
+/* =========================
+   LABEL STYLE
+========================= */
+.form-label{
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* =========================
+   GRID SPACING FIX
+========================= */
+.field-box{
+    margin-bottom: 18px;
+}
+
+/* =========================
+   ROW GAP IMPROVE
+========================= */
+.row{
+    row-gap: 5px;
+}
+
+/* =========================
+   TEXTAREA BEAUTY
+========================= */
+textarea.form-control{
+    min-height: 140px;
+    resize: none;
+}
+
+/* =========================
+   BUTTON STYLE IMPROVE
+========================= */
+.btn-success{
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-success:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(34,197,94,0.2);
+}
+
+/* =========================
+   SMALL RESPONSIVE FIX
+========================= */
+@media(max-width:768px){
+    .main-card{
+        padding: 18px;
+    }
+}
+
+
+
+
+
+
+
